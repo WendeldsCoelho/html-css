@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        /* POSSO USAR O DEVTOOLS PARA CRIAR MINHA PRÓPRIA BOX SHADOW DE MANEIRA PRÁTICA*/
+        body{
+            background-color: grey;
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(147, 147, 150);
+            padding: 5px;
+        }
+        nav{
+            background-color: grey;
+            box-shadow: 2px 2px  4px 1px rgba(0, 0, 0, 0.237);
+        }
+        nav > a {
+            color: antiquewhite;
+            font-weight: bold;
+        }
+        main{
+            padding: 5px;
+            background-color: rgb(255, 255, 255);
+            border-radius:10px  0px ;
+            margin: 10px;
+            box-shadow: 6px 3px 3px 0px rgba(0, 0, 0, 0.263);
+        }
+        footer{
+            background-color: black;
+            color: rgb(246, 245, 245);
+            text-align: center;
+            padding: 3px;
+        }
+        footer > p{
+            margin:0px
+        }
+        article{
+            background-color: rgb(196, 192, 188);
+        }
+        article > aside {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!--Exemplificando grouping tags -->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in et, quo exercitationem nesciunt cumque. Atque omnis architecto, asperiores eligendi explicabo, tempora quibusdam doloremque dolorum aspernatur optio nesciunt exercitationem. Possimus.</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>
