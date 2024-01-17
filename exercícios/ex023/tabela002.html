@@ -12,12 +12,18 @@
         table{
             width: 450px;
             border-collapse: collapse;
+            position: relative;
+
         }
 
         caption{
             font-size: 1.4em;
             font-weight: bolder;
             padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n){
             background-color: lightgray;
         }
 
@@ -29,6 +35,12 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         td.num{
